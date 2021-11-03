@@ -6,6 +6,8 @@ const config: PlaywrightTestConfig = {
         baseURL: 'https://www.saucedemo.com',
         browserName: 'chromium',
     },
+    reporter: [["junit", { outputFile: 'results.xml' }], ["list"], ["html"]]
+
 };
 
 export default config;

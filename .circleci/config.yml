@@ -14,6 +14,10 @@ jobs:
       - run:
           command: yarn run test
           name: Run YARN tests
+          store_test_results:
+            path: results.xml
+          store_artifacts:
+            path: playright-report/
 
 workflows:
   test_my_app:
