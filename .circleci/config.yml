@@ -5,8 +5,8 @@ orbs:
 
 jobs:
   test:
-    executor:
-      name: mcr.microsoft.com/playwright:focal
+    docker:
+      - image: mcr.microsoft.com/playwright:focal
     steps:
       - checkout
       - node/install-packages:
