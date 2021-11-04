@@ -17,7 +17,7 @@ jobs:
       - store_test_results:
             path: results.xml
       - store_artifacts:
-            path: playright-report/
+            path: playwright-report/
 
 workflows:
   test_my_app:
